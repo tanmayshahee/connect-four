@@ -119,6 +119,7 @@ export default (state = initialState, action) => {
       newState.isTournamentDraw = false;
       newState.currentGame.count = 1;
       newState.currentGame.isDraw = false;
+      newState.currentGame.undoStep = false;
       newState.currentGame.firstChance = 1;
       newState.currentGame.winner = { ...state.currentGame.winner };
       newState.currentGame.winner = {};

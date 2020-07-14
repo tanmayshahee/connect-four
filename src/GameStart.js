@@ -26,7 +26,6 @@ const GameStart = (props) => {
         <div className={"game-start-card"}>
           <GameBoard />
         </div>
-
         <div className={"right-side-content"}>
           <div className={"tournament-name"}>
             {`${props.numberOfGamesToPlay} Games Tournament`}

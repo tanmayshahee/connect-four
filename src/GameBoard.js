@@ -27,6 +27,8 @@ const GameBoard = (props) => {
       board.push(row);
     }
 
+    stepsSequenceData.current = [];
+
     setBoard(board);
 
     if (props.whoStartsGame == "Always Player 01") {
@@ -81,6 +83,8 @@ const GameBoard = (props) => {
       setBoard(gameBoard);
       props.undoStep({ undoStep: false });
       props.setCurrentPlayer({ currentPlayer: togglePlayer() });
+    } else {
+      props.undoStep({ undoStep: false });
     }
   };
 

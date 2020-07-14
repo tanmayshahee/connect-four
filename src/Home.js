@@ -33,7 +33,7 @@ const Home = (props) => {
           </div>
           <div className={"seperator"}></div>
           <div className={"lower-half"}>
-            <div className={"row"}>
+            <div className={"custom-row"}>
               <Button
                 btnText={"Custom Game"}
                 imageUrl={btn1Image}
@@ -46,7 +46,7 @@ const Home = (props) => {
                 className={"two-player-btn"}
               />
             </div>
-            <div className={"row"}>
+            <div className={"custom-row"}>
               <Button
                 btnText={"Game Online"}
                 imageUrl={btn3Image}
