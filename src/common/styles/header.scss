@@ -1,0 +1,27 @@
+.header-main {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  .back-icon {
+    font-weight: 500;
+    font-size: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .header-title {
+    position: relative;
+    left: 35%;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #424242;
+    opacity: 1;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}

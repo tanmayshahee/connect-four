@@ -1,0 +1,76 @@
+.button-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+  min-height: 60px;
+  width: 340px;
+  border-radius: 20px;
+  opacity: 1;
+  background: #4babff 0% 0% no-repeat padding-box;
+  .icon-holder {
+    margin-right: 15px;
+    margin-left: 15px;
+    img {
+      width: 25px;
+      height: auto;
+      display: flex;
+    }
+  }
+  .btn-text {
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  &.two-player-btn {
+    background: #4b7bff;
+  }
+  &.game-online-btn {
+    background: #4b4bff;
+  }
+  &.training-game-btn {
+    background: #6e4bff;
+  }
+  &.start-game-btn {
+    width: calc(100% - 25px);
+    margin-top: 25px;
+    background: #4b7bff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707026;
+    border-radius: 20px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    .btn-text {
+      font-size: 25px;
+    }
+  }
+  &.modal-button {
+    border-radius: 20px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn-text {
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+  &.secondary {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #4b7bff26;
+    .btn-text {
+      color: #4b7bff;
+    }
+  }
+  &.primary {
+    background: #4b7bff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707026;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

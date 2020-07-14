@@ -1,0 +1,88 @@
+.tab-main {
+  background: #dcf6e4 0% 0% no-repeat padding-box;
+  border: 1px solid #70707026;
+  border-radius: 15px;
+  opacity: 1;
+  display: flex;
+  height: 105px;
+  align-items: center;
+  margin-bottom: 25px;
+  &:hover {
+    cursor: pointer;
+  }
+  &.player-1 {
+    background: #dcf6e4 0% 0% no-repeat padding-box;
+  }
+  &.player-2 {
+    background: #f6efd5 0% 0% no-repeat padding-box;
+    .avatar-holder {
+      border-color: #f8d146;
+    }
+  }
+  &.winner {
+    background: #eff3ff 0% 0% no-repeat padding-box;
+    .avatar-holder {
+      border-color: #b1c4f9;
+    }
+  }
+
+  .avatar-holder {
+    margin-left: 25px;
+    border-radius: 100px;
+    opacity: 1;
+    width: 90px;
+    border: 10px solid #37ac5d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+    img {
+      min-height: 50px;
+    }
+  }
+  .details-main {
+    display: flex;
+    justify-content: space-between;
+    min-width: 150px;
+    .details-holder {
+      margin-left: 15px;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      .title {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      .sub-title {
+        color: #424242;
+        opacity: 1;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .score-holder {
+      .title {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .current-player {
+    width: 95px;
+    border: 10px solid #ffa200;
+    height: 95px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+
+    .avatar-holder {
+      width: 80px;
+      min-height: 75px;
+      margin-left: 0;
+      img {
+        height: 50px;
+      }
+    }
+  }
+}

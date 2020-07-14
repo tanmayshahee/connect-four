@@ -1,0 +1,113 @@
+body {
+  font-family: "Lucida Sans Unicode";
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 0px 0px;
+}
+
+.button {
+  background-color: #303030;
+  color: #50c8ff;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.button:hover {
+  background-color: #50c8ff;
+  color: #303030;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.cell {
+  height: 80px;
+  width: 80px;
+  background: #84a4fc 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000040;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cell .avatar-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell .avatar-holder.avatar1 {
+  border: 5px solid #37ac5d;
+}
+.cell .avatar-holder.avatar2 {
+  border: 5px solid #f8d146;
+}
+.cell .avatar {
+  width: 35px;
+  height: auto;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #000;
+  border-radius: 100px;
+}
+
+.circles {
+  margin: -40px 0 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.red-sm {
+  background-color: red;
+}
+
+.yellow-sm {
+  background-color: yellow;
+}
+
+.message {
+  text-align: center;
+  font-size: 17px;
+}
+
+.white {
+  height: 60px;
+  width: 60px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.red {
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  border-radius: 100px;
+  transition: background-color 0.5s;
+}
+
+.yellow {
+  height: 60px;
+  width: 60px;
+  background-color: yellow;
+  border-radius: 100px;
+  transition: background-color 0.5s;
+}
