@@ -11,6 +11,7 @@
   border-radius: 20px;
   opacity: 1;
   background: #4babff 0% 0% no-repeat padding-box;
+  position: relative;
   .icon-holder {
     margin-right: 15px;
     margin-left: 15px;
@@ -76,6 +77,22 @@
   &:hover {
     cursor: pointer;
   }
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    .left-side {
+      display: flex;
+    }
+    .info-msg {
+      position: absolute;
+      right: 15px;
+      background: #37ac5d;
+      color: #ffff;
+      border-radius: 100px;
+      padding: 5px;
+      top: 13px;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -85,6 +102,9 @@
     margin-left: 10px;
     .icon-holder {
       margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
         width: 20px;
       }
@@ -94,6 +114,15 @@
     }
     &.start-game-btn {
       // width: 100%;
+    }
+    .main-container {
+      .info-msg {
+        right: unset;
+        left: -20px;
+        top: 0px;
+        font-size: 10px;
+        transform: rotateZ(-35deg);
+      }
     }
   }
 }

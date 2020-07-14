@@ -38,6 +38,7 @@ const Home = (props) => {
                 btnText={"Custom Game"}
                 imageUrl={btn1Image}
                 className={"custom-game-btn"}
+                infoMsg={"Coming Soon"}
               />
               <Button
                 btnText={"Two Players"}
@@ -51,11 +52,13 @@ const Home = (props) => {
                 btnText={"Game Online"}
                 imageUrl={btn3Image}
                 className={"game-online-btn"}
+                infoMsg={"Coming Soon"}
               />
               <Button
                 btnText={"Training Game"}
                 imageUrl={btn4Image}
                 className={"training-game-btn"}
+                infoMsg={"Coming Soon"}
               />
             </div>
           </div>

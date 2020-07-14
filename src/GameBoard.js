@@ -12,7 +12,6 @@ import "./styles/gameboard.css";
 
 const GameBoard = (props) => {
   const [gameBoard, setBoard] = useState([]);
-  const [message, setMessage] = useState("");
   const stepsSequenceData = useRef([]);
 
   // Starts new game
@@ -61,7 +60,6 @@ const GameBoard = (props) => {
       startNextGame: false,
       isTournamentEnded: false,
     });
-    setMessage("");
   };
 
   useEffect(() => {
@@ -115,23 +113,18 @@ const GameBoard = (props) => {
         setBoard(board);
         props.setGameOverFlag({ isGameOver: true });
         props.setCurrentGameWinner({ winner: props.player1 });
-        setMessage("Player 1 (red) wins!");
       } else if (result === props.player2.id) {
         setBoard(board);
         props.setGameOverFlag({ isGameOver: true });
         props.setCurrentGameWinner({ winner: props.player2 });
-        setMessage("Player 2 (yellow) wins!");
       } else if (result === "draw") {
         setBoard(board);
         props.setGameOverFlag({ isGameOver: true });
         props.setCurrentGameWinner({ winner: {}, isDraw: true });
-        setMessage("Draw game.");
       } else {
         setBoard(board);
         props.setCurrentPlayer({ currentPlayer: togglePlayer() });
       }
-    } else {
-      setMessage("Game over. Please start a new game.");
     }
   };
 
